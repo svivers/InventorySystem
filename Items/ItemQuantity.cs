@@ -18,6 +18,6 @@ namespace Core.Items
 
         public ItemId Id => m_id;
         public int Quantity => m_quantity;
-        public bool IsEmpty => !m_id.IsValid;
+        public bool IsEmpty => !m_id.IsValid && m_quantity > 0;
     }
 }
